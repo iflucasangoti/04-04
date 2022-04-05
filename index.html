@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de clientes</h1>
+    <h2 style="color: red;">Todos os campos são de preenchimento obrigatório</h2>
+    <form>
+        <fieldset style="width:90%; background-color:lightgray">
+            <legend><b>Dados Pessoais:</b></legend>
+            <label for="txtNome"><b>Nome:</b></label><br>
+            <input type="text" id="txtNome" style="width:100%" placeholder="Nome completo"  required>
+
+            <br><br>
+            <label for="txtNascimento"><b>Data de nascimento:</b></label><br>
+            <input type="date" id="txtNascimento" style="width:50%" required>
+
+            <br><br>
+
+            Sexo:
+            <input type="radio" name="sexo" required>Masculino
+            <input type="radio" name="sexo" required>Feminino
+        </fieldset>
+        <br><br>
+        <fieldset style="width:90%; background-color:lightgray">
+            <legend><b>Informações de contato:</b></legend>
+            <label for="txtEmail"><b>Email:</b></label><br>
+            <input type="email" id="txtEmail" style="width:100%" placeholder="email@example.com" required>
+
+            <label for="txtNro"><b>Telefone Celular:</b></label><br>
+            <input type="tel" id="txtNro" placeholder="Apenas números (máx. 9)" maxlength="9" style="width:50%" required>
+<br>
+            <label for="homepage"><b>Website pessoal/profissional:</b></label><br>
+            <input type="url" id="homepage" name="homepage" required>
+            
+        </fieldset>
+        <br><br>
+        <fieldset style="width:90%; background-color:lightgray">
+            <legend><b>Localização:</b></legend>
+
+<label for="txtNome"><b>Endereço:</b></label><br>
+            <input type="text" id="txtNome" style="width:100%">
+                <label for="numero"><b>Número:</b></label><br>
+                <input type="number" id="numero"  max="9999" min="1" required><br>
+
+                <label for="txtCidade"><b>Cidade:</b></label><br>
+                <input type="text" id="txtCidade" style="width:100%" required>
+
+                <label for="txtEstado"><b>Estado:</b></label><br>
+                <select id="txtEstado" name="estado" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+        </fieldset>
+
+            <br><br>
+            <!--<input type="button" value="Enviar">-->
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Cadastrar">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
+
